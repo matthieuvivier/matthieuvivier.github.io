@@ -57,7 +57,24 @@
     @keyframes floatorb { 0%,100% { transform: translateY(-50%) scale(1); } 50% { transform: translateY(-54%) scale(1.06); } }
     @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
 
-    .hero-content { position: relative; max-width: 680px; }
+    .hero-inner { position: relative; display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 60px; }
+    .hero-content { max-width: 580px; }
+    .hero-photo-wrap {
+      flex-shrink: 0;
+      width: 260px; height: 320px;
+      border-radius: 24px;
+      border: 2px solid rgba(108,99,255,0.3);
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(108,99,255,0.15), 0 0 0 8px rgba(108,99,255,0.05);
+      animation: fadeUp 0.7s 0.5s ease both;
+      position: relative;
+    }
+    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .hero-photo-wrap::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 60%, rgba(10,10,15,0.3) 100%);
+    }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(108,99,255,0.1); border: 1px solid rgba(108,99,255,0.3);
@@ -174,17 +191,26 @@
     <div class="hero-grid"></div>
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
+    <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-tag">En alternance · Ouvert aux opportunités</div>
       <h1>Matthieu<br><span class="name-accent">Vivier</span></h1>
       <p class="hero-subtitle">Consultant BI & Data · Master Data Management · Étudiant Master MIASHS</p>
       <p class="hero-desc">
+<<<<<<< HEAD
         Passionné par la donnée et l'informatique décisionnelle, je transforme des données complexes en outils d'aide à la décision. 3 ans d'alternance chez OBS sur des projets grands comptes.
+=======
+        Passionné par la donnée et l'informatique décisionnelle, je transforme des données complexes en outils d'aide à la décision. 3 ans d'alternance chez OBS sur des projets grands comptes (RATP, Coopérative U).
+>>>>>>> 03a3d5cd13453e4b682a87a51ebca12f4672efeb
       </p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">Me contacter</a>
         <a href="https://www.linkedin.com/in/matthieu-vivier/" target="_blank" class="btn btn-outline">Voir LinkedIn</a>
       </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="Photo_MV.jpg" alt="Matthieu Vivier">
+    </div>
     </div>
   </section>
 
@@ -196,7 +222,11 @@
       <div class="about-grid">
         <div class="about-text">
           <p>Je suis <strong>Matthieu Vivier</strong>, consultant BI junior, actuellement en alternance chez OBS tout en préparant un <strong>Master MIASHS à l'Université Lumière Lyon 2</strong>.</p>
+<<<<<<< HEAD
           <p>Mon parcours m'a amené à travailler sur des projets décisionnels d'envergure — d'une TMA pour un grand opérateur de transport public à la gestion d'un référentiel de données centralisé pour le leader de la grande distribution basé sur <strong>Semarchy xDM</strong>.</p>
+=======
+          <p>Mon parcours m'a amené à travailler sur des projets décisionnels d'envergure — de la TMA RATP à la gestion d'un référentiel de données centralisé pour U-Tech (Coopérative U) basé sur <strong>Semarchy xDM</strong>.</p>
+>>>>>>> 03a3d5cd13453e4b682a87a51ebca12f4672efeb
           <p>Rigoureux et autonome, j'apprécie autant le travail technique (SQL, ETL, dashboarding) que les échanges avec les équipes MOA/MOE et la méthode <strong>Agile</strong>. Mon objectif : contribuer à des projets data à fort impact métier.</p>
         </div>
         <div class="about-stats">
@@ -206,7 +236,11 @@
           </div>
           <div class="stat-card">
             <div class="stat-number">2</div>
+<<<<<<< HEAD
             <div class="stat-label">Grands projets BI</div>
+=======
+            <div class="stat-label">Grands projets BI (RATP, Coop. U)</div>
+>>>>>>> 03a3d5cd13453e4b682a87a51ebca12f4672efeb
           </div>
           <div class="stat-card">
             <div class="stat-number">18</div>
@@ -235,7 +269,11 @@
               <div class="exp-title">Alternant Consultant BI / Master Data Management</div>
               <div class="exp-period">Sept. 2024 – Déc. 2025</div>
             </div>
+<<<<<<< HEAD
             <div class="exp-company">OBS — Projet 1</div>
+=======
+            <div class="exp-company">OBS — Projet UTECH (Coopérative U)</div>
+>>>>>>> 03a3d5cd13453e4b682a87a51ebca12f4672efeb
             <ul class="exp-list">
               <li>Maintenance et évolution d'un référentiel de données centralisé basé sur <strong style="color:var(--text)">Semarchy xDM</strong> (TMA)</li>
               <li>Développement de fonctionnalités Semarchy : attributs, règles de validation, workflows</li>
@@ -258,7 +296,11 @@
               <div class="exp-title">Alternant — Consultant BI Junior</div>
               <div class="exp-period">Oct. 2022 – Août 2024</div>
             </div>
+<<<<<<< HEAD
             <div class="exp-company">OBS — Projet 2</div>
+=======
+            <div class="exp-company">OBS — Projet RATP</div>
+>>>>>>> 03a3d5cd13453e4b682a87a51ebca12f4672efeb
             <ul class="exp-list">
               <li>Maintenance et évolution d'applications décisionnelles sur différents périmètres</li>
               <li>Modification de flux ETL, ajout de nouveaux indicateurs, optimisation des calculs</li>
@@ -391,7 +433,7 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
-          <a href="mailto:matthieuvivier01@gmail.com" class="contact-link">
+          <a href="/cdn-cgi/l/email-protection#fc919d8888949599898a958a95998ecccdbc9b919d9590d29f9391" class="contact-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             Email
           </a>
@@ -405,8 +447,4 @@
   </section>
 
   <footer>
-    <p>© 2026 Matthieu Vivier — Portfolio personnel · Consultant BI & Data</p>
-  </footer>
-
-</body>
-</html>
+    <p>© 2026 Matthieu Vivier — Portfolio personnel · Consultant
